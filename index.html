@@ -96,13 +96,15 @@
 </div>
 <script src="https://cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.min.js"></script> 
 <script>
+      
+      let title = location.pathname.substr(0, 50);
       const gitalk = new Gitalk({
           clientID: 'c6ddcc0a72bc9378c46f',
           clientSecret: '63a65c309423076948720020007e3bb21b7a185c',
           repo: 'final-work-exhibition',
           owner: 'little-nine321',
           admin: ['little-nine321'],
-          id: 'https://little-nine321.github.io/final-work-exhibition/',      // Ensure uniqueness and length less than 50
+          id: 'title',      // Ensure uniqueness and length less than 50
           distractionFreeMode: false  // Facebook-like distraction free mode
     });
       gitalk.render('gitalk-container');   
