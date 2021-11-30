@@ -1,0 +1,606 @@
+@charset "utf-8";
+/* CSS Document */
+body,ul,ol,li,p,h1,h2,h3,h4,h5,h6,form,fieldset,table,td,img,div,dl,dt,dd,input {margin:0px;padding:0; }
+body {
+	font-size:12px;}
+img{
+	border:none;}
+li{
+	list-style:none;}
+input,select,textarea{
+	outline:none;}
+textarea {
+	resize:none;}
+a {
+	text-decoration:none;color:#333;}
+/* 清浮动 */
+.clearfix:after {
+	content:"";display:block; clear:both;}
+.clearfix{
+	zoom:1;}
+.fl {
+	float:left;}
+.rl {
+	float:right;}
+
+
+/*网页内容宽度*/
+.widthBox {
+	width:1200px;
+	margin:0 auto;
+	}
+/*页头*/
+.headerBox {
+	 height:100px;
+	}
+.headerBox .logo{
+	float:left;
+	 padding-top:22px;
+	}
+.headerBox .Nav {
+	float:right;
+	
+	}
+.headerBox li{
+	position:relative;
+	}
+.headerBox .Nav li{
+	float:left;
+	}
+.headerBox .Nav li .active {
+	background-color:#00a2d9;
+	color:#FFF;	
+	}
+.headerBox .Nav li .down {
+	display:block;
+	width:72px;
+	height:16px;
+	background:url(../images/down.png);
+	position:absolute;
+	left:33px;
+	z-index:3;
+	}
+.headerBox .Nav li a {
+	display:block;
+	padding:38px 54px;
+	font-family:"微软雅黑";
+	font-size:18px;
+	}
+#courseBox{
+	display:block;
+	padding:38px 54px;
+	font-family:"微软雅黑";
+	font-size:18px;
+
+}
+.course{
+	z-index: 5;
+}
+#semesterBox{
+	display:block;
+	padding:38px 54px;
+	font-family:"微软雅黑";
+	font-size:18px;
+}
+#downListCourse{
+	border: 1px solid #c5c5c5;
+	width: 90px;
+	margin-left: 5px;
+	display: none;
+}
+#downSemesterList{
+	border: 1px solid #c5c5c5;
+	width: 90px;
+	margin-left: 5px;
+	display: none;
+}
+#downListCourse ul{
+	padding: 0;
+	margin: 0;
+
+}
+#downSemesterList ul{
+	padding: 0;
+	margin: 0;
+}
+#downListCourse ul li{
+	list-style: none;
+	font-size: 14px;
+	border-bottom: 1px dashed #c5c5c5;
+	text-align: center;
+	height: 25px;
+	width: 140px;
+	line-height: 25px;
+	color: black;
+	background-color: 240,239,245;
+	cursor: pointer;
+}
+#downSemesterList ul li{
+	list-style: none;
+	font-size: 14px;
+	width: 130px;
+	border-bottom: 1px dashed #c5c5c5;
+	text-align: center;
+	height: 25px;
+	line-height: 25px;
+	color: black;
+	background-color: 240,239,245;
+	cursor: pointer;
+}
+.Nav{
+	z-index: 1000;
+	position: relative;
+}
+
+.headerBox .Nav li a:hover,.headerBox .Nav li a:active {
+	background-color:#00a2d9;
+	color:#FFF;
+	}
+	#courseBox:hover,#courseBox:active{
+		background-color:#00a2d9;
+	color:#FFF;
+	}
+	#semesterBox:hover,#semesterBox:active{
+		background-color:#00a2d9;
+	color:#FFF;
+	}
+/*banner*/	
+.banner {
+	width:100%;
+	height:903px;
+	position: relative;
+	background:url(../images/banner_bg.jpg) no-repeat;
+	}
+.Ban_tex {
+	padding:72px 140px 0 0 ;
+	}
+.year {
+	position:relative;
+	left:-15px;
+	}
+.miantext {
+	padding-top:24px;
+	padding-bottom:10px;
+	}
+.smtext {
+   padding-bottom:145px;
+}
+.smtext01 {
+	padding-bottom:50px;
+	}
+.smtext01  {
+	display:inline-block;
+	
+	}
+
+
+.content{z-index: 0;}
+
+	
+
+
+
+.Showcontent {
+	margin-top:10px;
+	width:1220px;
+	margin-bottom:75px;
+	}
+.Showcontent li {
+	position:relative;
+	 text-align:center;
+	 float:left;
+	 padding-bottom:10px;
+	 margin-bottom:15px;
+	 margin-right:20px;
+	 transition: all .3s ease-out;
+    -o-transition: all .3s ease-out;
+    -moz-transition: all .3s ease-out;
+    -webkit-transition: all .3s ease-out;
+    -ms-transition: all .3s ease-out;
+	}
+.Showcontent li:hover {
+	z-index: 2;
+    box-shadow: 1px 1px 10px #aaa;
+    -o-box-shadow: 1px 1px 10px #aaa;
+    -moz-box-shadow: 1px 1px 10px #aaa;
+    -webkit-box-shadow: 1px 1px 10px #aaa;
+    -ms-box-shadow: 1px 1px 10px #aaa;
+    transform: scale(1.02);
+    -o-transform: scale(1.02);
+    -webkit-transform: scale(1.02);
+    -moz-transform: scale(1.02);
+    -ms-transform: scale(1.02);
+    transition: all .3s ease-in;
+    -o-transition: all .3s ease-in;
+    -moz-transition: all .3s ease-in;
+    -webkit-transition: all .3s ease-in;
+    -ms-transition: all .3s ease-in;
+	color:#ef7e8d;
+	}
+.Showcontent li p {
+	font-family:"微软雅黑";
+	font-size:20px;
+	line-height:40px;
+	}
+.Showcontent li span {
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:16px;
+	}
+.Showcontent .last{
+	padding-right:0;
+	}
+#footer {
+	width:100%;
+	background-color:#1b1b1b;
+	}
+.FooterBox div {
+	float:left;
+	}
+.FooterBox {
+	padding-top:50px;
+	}
+
+.Fo_link {
+	font-family:"微软雅黑";
+	font-size:14px;
+	margin:0px 120px 0 68px;
+	_margin-left:34px;
+	}
+.Fo_link li {
+	margin-bottom:14px;
+	width:200px;
+	text-align:center;
+	}
+.Fo_link a ,.Fo_link span {
+	color:#FFF;
+	display:block;
+	padding:7px 30px;
+		}
+.Fo_link a:hover,.Fo_link a:active,.Fo_link span:hover{
+	background:#FFF;
+	color:#000;
+	cursor:pointer;
+	}
+.Fo_contact {
+	color:#FFF;
+	
+	_width:205px;
+	}
+
+.Fo_mail {
+	color:#FFF;	
+
+	}
+
+.Fo_mail p{
+
+		font-size: 20px;
+		}
+.Inputmian {
+	font-size:0;
+	}
+.Inputmian input,.Inputmiantext textarea,  .btn input{
+	display:inline-block;
+
+	margin-right:16px;
+	background-image:none;
+	background-color:#1b1b1b;
+	color:#FFF;
+	text-indent:10px;
+	font-family:"Microsoft YaHei UI", "Microsoft YaHei UI Light","微软雅黑";
+	border:1px solid #FFF;
+	line-height:38px;
+	}
+.btn input:hover{
+   cursor:pointer;
+	}
+.Inputmian input {
+    margin-top: 10px;
+    width:150px;
+	height:40px;
+	line-height:30px;
+	}
+.Inputmiantext {
+	margin:10px 0;
+	
+	}
+.Inputmiantext	textarea{
+	margin:0;
+	width:482px;
+	
+	/*width:472px\0\9;*/
+	*width:488px;
+	width:486px\0;
+	height:100px;
+	text-align:left;
+	color:#FFF;
+	line-height:20px;
+	overflow:hidden;
+	padding:10px 0;
+		}
+ .btn input {
+	width:150px;
+	height:40px;
+	color:#FFF;
+	text-align:center;
+	padding-right: 10px;
+	
+	}
+.btn input:hover,.btn input:active{
+	color:#000;
+	background-color:rgb(129, 37, 109)
+	}
+/*作品*/
+#content {text-align:left;}
+.workbanner{
+	width:100%;
+	height:250px;
+	
+	text-align:center;
+	color:#FFF;
+	}
+.workbanner{
+	background:url(../images/workbanner.jpg) no-repeat;
+	}
+.workbanner h1 {
+	font:60px  "Microsoft YaHei UI", "Microsoft YaHei UI Light","微软雅黑";
+	/*font-weight:bold;*/
+	padding-top:76px;
+	}	
+.workbanner p{
+	font:24px Arial, Helvetica, sans-serif;
+	line-height:34px;
+	}	
+input {
+	background:none;
+	border:1px solid #00a2d9;
+	text-indent:10px;
+	font:20px Arial, Helvetica, sans-serif;
+	color:#00a2d9;
+	height:38px;
+    width:100%;
+	margin:10px 0;
+	line-height:37px;
+	*text-indent:0;
+	*padding-left:10px;
+	*width:678px;
+	}
+ 
+ input{
+	background:none;
+	border:1px solid #00a2d9;
+	text-indent:10px;
+	font:20px Arial, Helvetica, sans-serif;
+	color: #00a2d9;
+	height:38px;
+    width:160px;
+	margin-bottom:10px ;
+	padding-right:10px;	
+	
+	}
+  input:hover,.SenBox  input:active{
+	background-color:#00a2d9;
+	color:#FFF;
+	cursor:pointer;
+	}
+
+	
+/*动画*/
+.animated {
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+}
+
+
+.animated.infinite {
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+}
+.animated.infinite {
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+}
+.animated .bounceIn
+ {
+  -webkit-animation-duration: .1s;
+  animation-duration: .1s;
+}
+@-webkit-keyframes fadeInLeft {
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(-100%, 0, 0);
+    transform: translate3d(-100%, 0, 0);
+  }
+  to {
+    opacity: 1;
+    -webkit-transform: none;
+    transform: none;
+  }
+}
+
+@keyframes fadeInLeft {
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(-100%, 0, 0);
+    transform: translate3d(-100%, 0, 0);
+  }
+
+  to {
+    opacity: 1;
+    -webkit-transform: none;
+    transform: none;
+  }
+}
+
+.fadeInLeft {
+  -webkit-animation-name: fadeInLeft;
+  animation-name: fadeInLeft;
+}	
+@-webkit-keyframes fadeInUp {
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(0, 100%, 0);
+    transform: translate3d(0, 100%, 0);
+  }
+
+  to {
+    opacity: 1;
+    -webkit-transform: none;
+    transform: none;
+  }
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(0, 100%, 0);
+    transform: translate3d(0, 100%, 0);
+  }
+
+  to {
+    opacity: 1;
+    -webkit-transform: none;
+    transform: none;
+  }
+}
+
+.fadeInUp {
+  -webkit-animation-name: fadeInUp;
+  animation-name: fadeInUp;
+}
+@-webkit-keyframes fadeInRight {
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(100%, 0, 0);
+    transform: translate3d(100%, 0, 0);
+  }
+
+  to {
+    opacity: 1;
+    -webkit-transform: none;
+    transform: none;
+  }
+}
+
+@keyframes fadeInRight {
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(100%, 0, 0);
+    transform: translate3d(100%, 0, 0);
+  }
+
+  to {
+    opacity: 1;
+    -webkit-transform: none;
+    transform: none;
+  }
+}
+
+.fadeInRight {
+  -webkit-animation-name: fadeInRight;
+  animation-name: fadeInRight;
+}
+@-webkit-keyframes zoomIn {
+  from {
+    opacity: 0;
+    -webkit-transform: scale3d(.3, .3, .3);
+    transform: scale3d(.3, .3, .3);
+  }
+
+  50% {
+    opacity: 1;
+  }
+}
+
+@keyframes zoomIn {
+  from {
+    opacity: 0;
+    -webkit-transform: scale3d(.3, .3, .3);
+    transform: scale3d(.3, .3, .3);
+  }
+
+  50% {
+    opacity: 1;
+  }
+}
+
+.zoomIn {
+  -webkit-animation-name: zoomIn;
+  animation-name: zoomIn;
+}
+@-webkit-keyframes rotateIn {
+  from {
+    -webkit-transform-origin: center;
+    transform-origin: center;
+    -webkit-transform: rotate3d(0, 0, 1, -360deg);
+    transform: rotate3d(0, 0, 1, -360deg);
+    
+  }
+
+  to {
+    -webkit-transform-origin: center;
+    transform-origin: center;
+    -webkit-transform: none;
+    transform: none;
+    
+  }
+}
+
+@keyframes rotateIn {
+  from {
+    -webkit-transform-origin: center;
+    transform-origin: center;
+    -webkit-transform: rotate( -360deg);
+    transform: rotate( -360deg);
+    
+  }
+
+  to {
+    -webkit-transform-origin: center;
+    transform-origin: center;
+    -webkit-transform: none;
+    transform: none;
+    
+  }
+}
+
+.rotateIn {
+  -webkit-animation-name: rotateIn;
+  animation-name: rotateIn;
+}
+
+
+
+
+
+
+
+
+
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	

@@ -1,0 +1,118 @@
+<!DOCTYPE >
+<html >
+<head>
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>作品展示</title>
+
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+<meta name="renderer" content="webkit">
+<link href="css/main.css" rel="stylesheet" type="text/css" />
+<link href="css/lightbox.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+<div id="header">
+  <div class="widthBox">
+   <div class="headerBox">
+   <!-- logo -->
+    <ul class="Nav">
+      <li><div id="courseBox">课程</div>
+        <div id="downListCourse">
+            <ul class="course">
+                <li>创新实践1</li>
+                <li>创新实践2</li>
+                <li>创新实践3</li>
+                <li>创新实践4</li>
+            </ul>
+        </div></li>
+      <li><div id="semesterBox">学期</div>
+        <div id="downSemesterList">
+            <ul class="semesterList">
+                <li>2021-2022上</li>
+                <li>2021-2022下</li>
+                <li>2022-2023上</li>
+                <li>2022-2023下</li>
+               
+
+            </ul>
+        </div></li>
+      <li><a class="active" href="#">项目简介</a><i class="down"></i></li>
+      <li><a href="works.html">项目截图</a></li>
+  
+      <li><a href="contact.html">提交作品</a></li>
+    </ul>
+   </div>
+  </div>
+</div>
+<div id="content">
+  <div class="banner">
+   <div class="widthBox">
+     <div class="bannerBox">
+       <ul class="Ban_tex">
+         <li class="year fadeInLeft animated"><h1>&nbsp;&nbsp;项目名:&nbsp;期末作品网</h1></li>
+         <li class="miantext fadeInUp animated"><h1>项目作者:&nbsp;宋烨峰 王小丫 周天漪 黄孝梁</h1></li>
+         <li class="year fadeInLeft animated"><h1>&nbsp;&nbsp;学期:&nbsp;2021-2022上</h1></li>
+         <li class="year fadeInLeft animated"><h1>&nbsp;&nbsp;课程:&nbsp;创新实践1</h1></li>
+         <li class="smtext fadeInRight animated"><h1>项目内容:</h1>
+        <h2>用于期末创新实践班同学的展示<br/>
+          1. 基本信息：项目名、项目作者、课程、学期、项目介绍、截图、演示链接、github库链接 <br/>
+            a. 五星评分功能 、评论功能<br/>
+            b. 分组显示：课程、学期等分组显示<br/>
+          2. 课程信息：课程名、学期、教师名、学生名列表<br/></h2></li>
+         <li class="smtext01"><img class="rode rotateIn animated infinite bannerPng anDely" src="images/Ban_text_04.png" /></li>
+         <li class="smtext02 zoomIn animated anDely1"></li>
+       </ul>
+     </div>
+   </div>
+  </div>
+</div>
+  
+<div id="footer">
+  <div class="widthBox">
+  <div class="FooterBox clearfix">
+   <div class="Fo_link">
+     <ul>
+      
+      <li><span>返回顶部</span></li>
+     </ul>
+   </div>
+   <div class="Fo_contact">
+   
+   <div class="Fo_mail"><p>评论  Comment</p></div>
+    <iframe name="formsubmit" style="display:none;"> </iframe>
+     <form method="post" action="" id="Foform" target="formsubmit">
+      
+         <ul>
+       
+        <li class="Inputmiantext"><textarea name="frommian" id="frommian"></textarea></li>
+        <li class="btn"><input type="submit" value="提交" /><span id="error"></span></li>         
+        </ul>
+     </form>
+   </div>
+  </div>
+
+  </div>
+</div>
+</body>
+</html>
+<script type="text/javascript" src="js/jquery-1.10.2.min.js"></script>
+<script type="text/javascript" src="js/downlist.js"></script>
+<script type="text/javascript" >
+$(document).ready(function() {
+	$(".Fo_link li").on("click", function(event) {
+    event = event || window.event;
+    
+    //var winTop = $(window).scrollTop();
+    $("body").animate({scrollTop:0});
+     event.preventDefault();
+     });
+	
+	
+  
+});
+
+
+</script>
+
+

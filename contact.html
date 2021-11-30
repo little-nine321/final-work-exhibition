@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./css/font awesome/css/all.css">
+    <link rel="stylesheet" href="./css/contact.css">
+    <title>作品展示</title>
+</head>
+<body>
+    <div id="header">
+        <div class="widthBox">
+         <div class="headerBox">
+           <!-- logo -->
+          <ul class="Nav">
+            <li><a  href="index.html">项目简介</a></li>
+            <li><a href="works.html">项目截图</a></li>
+            <!-- 提交页面 -->
+            <li><a class="active" href="#">提交作品</a><i class="down"></i></li>
+          </ul>
+         </div>
+        </div>
+    </div>
+    <div class="workbanner"><h1>作品提交</h1><p>THE&nbsp;SHOW</p></div>
+    <form id="contact">
+        <div class="logo"><i class="fas fa-dove logo-icon"></i></div>
+        <h2 class="topic">Submit Project</h2>
+        <input type="text"  placeholder="项目名" required name="projectName">
+        <input type="text"  placeholder="项目作者" required name="members">
+        <input type="text"  placeholder="演示链接" required name="showherf">
+        <input type="text"  placeholder="github链接" required name="githubherf">
+        <input type="text"  placeholder="项目简介" required name="briefintro">
+        <br>
+        <label for="course">请选择课程：</label>
+        <select name="course" id="course">
+            <option value="1">创新实践1</option>
+            <option value="2">创新实践2</option>
+            <option value="3">创新实践3</option>
+            <option value="3">创新实践4</option>
+        </select>
+        <br>
+        <label for="grade">请选择年级：</label>
+        <select name="grade" id="grade">
+            <option value="1">2021-2022上</option>
+            <option value="2">2021-2022下</option>
+            <option value="3">2022-2023上</option>
+            <option value="3">2022-2023下</option>
+        </select>
+        <br>
+        <label for="file-input">请上传项目截图：</label>
+        <input type="file" id="file-input" data-t="file" name="fileContent" multiple="multiple" />
+        
+        <!-- <img src="" id="showImg"> -->
+        <div class="img-wrapper clearfix"></div>
+        <br> 
+        <input type="submit" id="contact-submit">
+    </form>
+    <script src="./js/jquery-1.10.2.min.js"></script>
+    <script>
+        document.querySelector('#file-input').addEventListener('change', function(e) {
+        let files = e.target.files;
+        let wrapper = document.querySelector(".img-wrapper");
+        wrapper.innerHTML = "";
+        for(let i = 0;i < files.length;i++){
+            let img = document.createElement("img");
+            img.className = "showImg";
+            let reader = new FileReader();
+            reader.readAsDataURL(files[i]);
+            reader.onload = function(e) {
+                img.src = e.target.result
+            }
+            wrapper.appendChild(img);
+        }
+        })
+    </script>
+</body>
+</html>
