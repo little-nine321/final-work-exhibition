@@ -10,6 +10,7 @@
 <link href="css/main.css" rel="stylesheet" type="text/css" />
 <link href="css/lightbox.css" rel="stylesheet" type="text/css" />
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.css">
+<link rel="stylesheet" href="./css/font awesome/css/all.css">
 </head>
 
 <body>
@@ -63,6 +64,17 @@
           2. 课程信息：课程名、学期、教师名、学生名列表<br/></h2></li>
          <li class="smtext01"><img class="rode rotateIn animated infinite bannerPng anDely" src="images/Ban_text_04.png" /></li>
          <li class="smtext02 zoomIn animated anDely1"></li>
+         <!-- 评分 -->
+        <li class="grade smtext fadeInRight animated">
+          <div class="star-wrapper clearfix">
+            <!-- 五星评分 -->
+            <a href="javascript:;" class="fas fa-star star" style="color: rgb(43, 43, 43);"></a>
+            <a href="javascript:;" class="fas fa-star star" style="color: rgb(43, 43, 43);"></a>
+            <a href="javascript:;" class="fas fa-star star" style="color: rgb(43, 43, 43);"></a>
+            <a href="javascript:;" class="fas fa-star star" style="color: rgb(43, 43, 43);"></a>
+            <a href="javascript:;" class="fas fa-star star" style="color: rgb(43, 43, 43);"></a>
+          </div>
+        </li>
        </ul>
      </div>
    </div>
@@ -113,6 +125,7 @@
 </html>
 <script type="text/javascript" src="js/jquery-1.10.2.min.js"></script>
 <script type="text/javascript" src="js/downlist.js"></script>
+<script src="./js/grade.js"></script>
 <script type="text/javascript" >
 $(document).ready(function() {
 	$(".Fo_link li").on("click", function(event) {
