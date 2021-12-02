@@ -583,14 +583,16 @@ input {
 	float: left;
 }
 
-#content .grade .star-text{
+#content .grade .star-text,
+#content .grade .star-btn{
 	display: blcok;
 	height: 50px;
 	float: left;
-	/* background-color: red; */
 	line-height: 50px;
 	font-size:20px;
+	margin-left: 20px;
 }
+
 
 
 
